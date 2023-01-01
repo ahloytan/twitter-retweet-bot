@@ -5,8 +5,13 @@ CD %cd%
 set x=1
 
 :runName
-Set "URL="
-Set /P URL="Enter tweet URL please: "
+Set /P "URL=Enter tweet URL please: "
+cmd /v:on /c echo(^^!URL^^! | findstr /r "^[&^\\/?%%*:|<>\.\"]*$^" > nul
+
+IF %errorlevel% NEQ 0 ( 
+    for /f "tokens=1 delims=?" %%a in ("%URL%") do set "URL=%%a"
+)
+
 
 if not defined URL goto :end
 if /I "%URL%" Equ "E" goto :end
