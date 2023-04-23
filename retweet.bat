@@ -17,8 +17,8 @@ if not defined URL goto :end
 if /I "%URL%" Equ "E" goto :end
 
 (
-for %%a in (%URL%) do (
-    robot --variable URL:%URL% retweet.robot
+    for /f "tokens=1,2 delims= " %%a in ("%URL%") do (
+        robot -v URL:%%a -v ADD_TEXT:%%b retweet.robot
     )
 )
 set /a x+=1
