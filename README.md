@@ -4,10 +4,11 @@
 # Demonstration
 Retweeting
 <br>
-![retweet](https://user-images.githubusercontent.com/28771440/234232221-21fdf549-41e8-4b17-ad2d-699f5b3b1977.gif)
+<img src="https://user-images.githubusercontent.com/28771440/234232221-21fdf549-41e8-4b17-ad2d-699f5b3b1977.gif" width="50%" height="50%"/>
 <br><br>
 Unretweeting
-![unretweet](https://user-images.githubusercontent.com/28771440/234232249-b9b05990-cd83-4b37-8c4f-34fb7ea2132b.gif)
+<br>
+<img src="https://user-images.githubusercontent.com/28771440/234232249-b9b05990-cd83-4b37-8c4f-34fb7ea2132b.gif" width="50%" height="50%"/>
 
 
 # How to use 
