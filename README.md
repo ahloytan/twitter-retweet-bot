@@ -1,5 +1,5 @@
 # twitter-retweet-bot
- A simple bot (automation) used to retweet/unretweet NFT giveaway tweets from Twitter
+ A simple bot (automation) used to retweet/unretweet NFT giveaway tweets from Twitter. Built with Python and RobotFramework
 
 # Demonstration
 Retweeting
