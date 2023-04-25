@@ -1,11 +1,19 @@
 # twitter-retweet-bot
  A simple bot (automation) used to retweet/unretweet NFT giveaway tweets from Twitter
 
+# Demonstration
+Retweeting
+<br>
+![retweet](https://user-images.githubusercontent.com/28771440/234232221-21fdf549-41e8-4b17-ad2d-699f5b3b1977.gif)
+<br><br>
+Unretweeting
+![unretweet](https://user-images.githubusercontent.com/28771440/234232249-b9b05990-cd83-4b37-8c4f-34fb7ea2132b.gif)
+
+
 # How to use 
  1. Open variables.py and fill up the necessary information (DRIVER, USER_DATA, PROFILE, TEXT, USER) according to what you want to require
  2. The executables are retweet.bat(to retweet) and unretweet.bat(to unretweet)
  3. Simply launch either of the .bat file by double clicking it, and copy-paste the link to the tweet (CTRL+C on browser, right click to paste when you open the terminal/command prompt) 
-
 
 # Notes
  1. We're using Microsoft Edge as the browser to run the twitter bot. Hence, if you're using MS Edge as your primary browser, it will likely not work. A solution would either be change your primary browser to Google Chrome, Mozilla Firefox, etc. (easier) or change the code to launch in the 2 browser mentioned prevously (harder)
