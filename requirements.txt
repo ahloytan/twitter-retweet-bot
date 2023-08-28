@@ -1,1 +1,2 @@
 robotframework-seleniumlibrary==6.0.0
+selenium==4.9.1
