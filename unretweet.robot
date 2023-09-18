@@ -21,19 +21,18 @@ Open Browser To Twitter
     Call Method    ${options}    add_argument    --profile-directory\=${PROFILE}
     Open Browser   ${URL}        Edge            options=${options}    
 
-    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div/div/div[1]/div/div/article                             10s                      
-    Scroll Element Into View               xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div/div/div[1]/div/div/article/div/div/div[3]/div[6]
+    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article                                                    10s                      
+    Scroll Element Into View               xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div
     
-    #Like Button
-    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div/div/div[1]/div/div/article/div/div/div[3]/div[6]/div/div[3]
+    #Like Button                                    
+    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div[3]/div/div/div[1]
     
     #Retweet Button
-    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div/div/div[1]/div/div/article/div/div/div[3]/div[6]/div/div[2]    10s
-    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div/div/div[1]/div/div/article/div/div/div[3]/div[6]/div/div[2]
-    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]                                                                   10s
-    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div                                                   10s
+    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div[2]/div/div/div[1]    10s
+    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div[2]/div/div/div[1]
+    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div                                                                          10s
     Click Element                          xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div
-    Wait Until Element Is Not Visible      xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div                                                           10s           
+    Wait Until Element Is Not Visible      xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div                                                                          10s           
     
     # Comment
     ${isCommentVisible}                    Run Keyword And Return Status                                  Element Should Be Visible                                                      xpath=//a[@href="/${USER}"]//div//div[1]//span//span
@@ -50,7 +49,7 @@ Open Browser To Twitter
     END
     
     #Kebab Menu
-    Click Element At Coordinates           xpath=//a[@href="/${USER}"]//div//div[1]//span//span                                                                                          455     0
+    Click Element At Coordinates           xpath=//a[@href="/${USER}"]//div//div[1]//span//span                                                                                          460     0
     Wait Until Element Is Visible            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]                                                                 10s
     #Delete Button
     Click Element                            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div[1]
