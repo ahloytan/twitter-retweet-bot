@@ -26,6 +26,7 @@ Unretweeting
  6. Whether the program fails, 2 `.html` (log, report) and 1 `.xml` (output) file will be generated. Don't worry about it as it's generated to show you where and why the program has failed
  7. If you get the following error `Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version XXX. Current browser version is 120.0.2210.144`, download the necessary driver and replace the `msedgedriver.exe` where it's stored. For me, I stored in under my python installation(`C:\Users\<Current-user>\AppData\Local\Programs\Python\<Python-version>`)
  8. Please note that you have to open MS Edge, log into your Twitter account, and sync your information to run this program successfully (you only have to do this once for the first time)
+ 9. To retweet with a comment, the format should be <linkToTweet> <comment> (with a spacing in between)
 
 # Installation
 1. Navigate to the root of this folder (Should be something like `pathToDirectory/twitter-retweet-bot`)
