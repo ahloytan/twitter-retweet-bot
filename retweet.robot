@@ -50,7 +50,7 @@ Open Browser To Twitter
     ${hasHashTag}                    Evaluate    "#" in "${ADD_TEXT}"
 
     IF    '${ADD_TEXT}' != '${EMPTY}' and ${hasHashTag}
-        Click Element                    xpath=/html/body/div[1]/div/div/div[1]/div[3]/div/div/div[1]
+        Press Keys    None    ESC
     END    
 
     Wait Until Element Is Enabled    xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/div                                 15s    
