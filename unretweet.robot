@@ -42,7 +42,7 @@ Open Browser To Twitter
         ${scrollY}                                Set Variable                                            1000     
         WHILE    not ${isCommentVisible}    limit=20
             Execute Javascript                   window.scrollTo(0, ${scrollY})
-            Sleep                                1000ms
+            Sleep                                500ms
             ${isCommentVisible}                  Run Keyword And Return Status                            Element Should Be Visible                                                      xpath=//a[@href="/${USER}"]//div//div[1]//span//span 
             ${scrollY}                           Evaluate                                                 ${scrollY}+1000
         END
@@ -58,5 +58,4 @@ Open Browser To Twitter
     Click Element                            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div[2]/div[1]
     Wait Until Element Is Not Visible        xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]                                                             10s
 
-    Sleep    1250ms
-    [Teardown]        Close Browser
+    # [Teardown]        Close Browser
