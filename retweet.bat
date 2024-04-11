@@ -9,7 +9,7 @@ Set /P "URL=Enter tweet URL please: "
 
 @REM https://stackoverflow.com/questions/13805187/how-to-set-a-variable-inside-a-loop-for-f
 SETLOCAL ENABLEDELAYEDEXPANSION
-for /F "tokens=1,2 delims= " %%a in ("%URL%") do (
+for /F "tokens=1,* delims= " %%a in ("%URL%") do (
     echo."%%a" | findstr /C:"?" 1>nul
     set "processedURL=%%a"
     if not errorlevel 1 (
@@ -18,8 +18,9 @@ for /F "tokens=1,2 delims= " %%a in ("%URL%") do (
         for /F "tokens=1 delims=?" %%c in ("%%a") do set "processedURL=%%c"
     )
 
-    robot -v URL:!processedURL! -v ADD_TEXT:%%b retweet.robot
+    robot -v URL:!processedURL! -v ADD_TEXT:"%%b" retweet.robot
 )
+ENDLOCAL
 
 set /a x+=1
 goto :runName
