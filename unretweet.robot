@@ -25,11 +25,11 @@ Open Browser To Twitter
     Scroll Element Into View               xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div
     
     #Like Button                                    
-    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div/div[3]/div/div/div[1]
-                                                 
+    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div/div[3]/button/div/div[1] 
+        
     #Retweet Button
-    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div/div[2]/div/div/div[1]    10s
-    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div/div[2]/div/div/div[1]
+    Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div/div[2]/button/div/div[1]    10s
+    Click Element                          xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div/div/article/div/div/div[3]/div[5]/div/div/div[2]/button/div/div[1]
     Wait Until Element Is Visible          xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div                                                                          10s
     Click Element                          xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div
     Wait Until Element Is Not Visible      xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div                                                                          10s           
@@ -49,13 +49,13 @@ Open Browser To Twitter
     END
     
     #Kebab Menu
-    Click Element At Coordinates           xpath=//a[@href="/${USER}"]//div//div[1]//span//span                                                                                          460     0
+    Click Element At Coordinates             xpath=//a[@href="/${USER}"]//div//div[1]//span//span                                                                                          460     0
     Wait Until Element Is Visible            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]                                                                 10s
     #Delete Button
     Click Element                            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div[1]
     #Delete Dialog
     Wait Until Element Is Visible            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]                                                             10s
-    Click Element                            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div[2]/div[1]
+    Click Element                            xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div[2]/button[1]/div                                  
     Wait Until Element Is Not Visible        xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]                                                             10s
 
     # [Teardown]        Close Browser
