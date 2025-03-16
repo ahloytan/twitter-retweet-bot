@@ -28,20 +28,20 @@ Open Browser To Twitter
                                            
     Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article                                                                             5s
     #Like                        
-    Scroll Element Into View         xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[3]/button/div/div[1]             
-    Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[3]/button/div/div[1]                        5s
-    Click Element                    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[3]/button/div/div[1]
+    # Scroll Element Into View         xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[3]/button/div/div[1]             
+    # Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[3]/button/div/div[1]                        5s
+    # Click Element                    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[3]/button/div/div[1]
     
     #Retweet                                           
-    Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[2]/button                        5s                                   
-    Click Element                    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[2]/button
+    Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[2]/button                        5s                                   
+    Click Element                    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[2]/button
     Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div                                                                                     5s
     Click Element                    xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div[2]/div/div[3]/div/div/div/div                                                                                  
     
     # Comment                                       
-    Scroll Element Into View         xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[1]/button
-    Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[1]/button                              5s
-    Click Element                    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[6]/div/div/div[1]/button
+    Scroll Element Into View         xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[1]/button
+    Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[1]/button                              5s
+    Click Element                    xpath=/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[1]/div[1]/div/article/div/div/div[3]/div[5]/div/div/div[1]/button
     
     # Comment Modal
     Wait Until Element Is Visible    xpath=/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]                                                                                                        5s
